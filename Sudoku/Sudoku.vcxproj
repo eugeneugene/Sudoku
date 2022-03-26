@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{851ED427-D750-4F2F-AF91-181BD2A5AA64}</ProjectGuid>
+    <RootNamespace>Sudoku</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <VcpkgTriplet Condition="'$(Platform)'=='Win32'">x86-windows-static-lib</VcpkgTriplet>
+    <VcpkgTriplet Condition="'$(Platform)'=='x64'">
+    </VcpkgTriplet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfAtl>false</UseOfAtl>
+    <CharacterSet>NotSet</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+    <IncludePath>$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)$(Configuration)\$(Platform)\$(PlatformToolsetVersion)\</OutDir>
+    <IntDir>$(SolutionDir)$(Configuration)\$(Platform)\$(PlatformToolsetVersion)\$(MSBuildProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <TargetName>$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <TargetName>$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile />
+    <ResourceCompile />
+    <Link />
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+      <ImageHasSafeExceptionHandlers />
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile />
+    <ResourceCompile />
+    <Link />
+    <ClCompile />
+    <Link />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile />
+    <ResourceCompile />
+    <Link />
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <ClCompile>
+      <DebugInformationFormat>None</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile />
+    <ResourceCompile />
+    <Link />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="GameField.cpp" />
+    <ClCompile Include="GameFieldCtrl.cpp" />
+    <ClCompile Include="GameFieldData.cpp" />
+    <ClCompile Include="GameFieldHeader.cpp" />
+    <ClCompile Include="HintCtrl.cpp" />
+    <ClCompile Include="LoadSnapShotPopup.cpp" />
+    <ClCompile Include="MainWnd.cpp" />
+    <ClCompile Include="ModuleVersion.cpp" />
+    <ClCompile Include="ShowWinnersDlg.cpp" />
+    <ClCompile Include="SnapShot.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="sudoku.cpp" />
+    <ClCompile Include="task.cpp" />
+    <ClCompile Include="taskdata.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AboutDlg.h" />
+    <ClInclude Include="atlres.h" />
+    <ClInclude Include="Cell.h" />
+    <ClInclude Include="GameField.h" />
+    <ClInclude Include="GameFieldCtrl.h" />
+    <ClInclude Include="GameFieldData.h" />
+    <ClInclude Include="GameFieldHeader.h" />
+    <ClInclude Include="HintCtrl.h" />
+    <ClInclude Include="HiScores.h" />
+    <ClInclude Include="LoadSnapShotPopup.h" />
+    <ClInclude Include="LoadString.h" />
+    <ClInclude Include="MainWnd.h" />
+    <ClInclude Include="MakeSnapShotDlg.h" />
+    <ClInclude Include="ModuleVersion.h" />
+    <ClInclude Include="MyGridCtrl.h" />
+    <ClInclude Include="MyTaskDialog.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="ShowWinnersDlg.h" />
+    <ClInclude Include="SnapShot.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="task.h" />
+    <ClInclude Include="Win32ErrorEx.h" />
+    <ClInclude Include="WinnerDlg.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="readme.txt" />
+    <None Include="res\sudoku.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="sudoku.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="TODO.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WTLGridCtrl\WTLGridCtrl.vcxproj">
+      <Project>{1446682c-7fee-44f9-b5b0-436fcdd7c3c3}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="sudoku.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

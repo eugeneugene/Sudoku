@@ -1,0 +1,462 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "atlres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral (Default) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEUD)
+LANGUAGE LANG_NEUTRAL, SUBLANG_DEFAULT
+#pragma code_page(1251)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 241, 118
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,184,97,50,14
+    ICON            IDR_MAINFRAME,IDC_STATIC,81,20,20,20
+    CTEXT           "Sudoku 2010",IDC_STATIC_VERSION,7,56,167,22
+    CTEXT           "Evgeniy Podkopaev (c) Copyright 2009, 2010",IDC_STATIC,7,90,167,21
+    GROUPBOX        "",IDC_STATIC,7,7,167,104
+END
+
+IDD_TASKDLG DIALOGEX 0, 0, 316, 180
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Cancel",IDC_CLOSE,259,159,50,14
+    EDITTEXT        IDC_DATAEDIT,7,7,302,140,ES_MULTILINE | ES_AUTOVSCROLL | ES_READONLY | ES_WANTRETURN,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+END
+
+IDD_SNAPSHOTDLG DIALOGEX 0, 0, 311, 92
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Make a snapshot"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Enter snapshot's name:",IDC_STATIC,7,19,76,8
+    EDITTEXT        IDC_EDIT_NAME,7,34,297,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,198,71,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,254,71,50,14
+END
+
+IDD_WINNERDLG DIALOGEX 0, 0, 309, 138
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_HEADER,7,18,295,14,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER | NOT WS_TABSTOP
+    LTEXT           "Enter your name:",IDC_STATIC,7,42,57,8
+    EDITTEXT        IDC_EDIT_NAME,7,59,295,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,198,117,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,252,117,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 234
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 111
+    END
+
+    IDD_TASKDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 173
+    END
+
+    IDD_SNAPSHOTDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 304
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 85
+    END
+
+    IDD_WINNERDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 131
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_SNAPSHOTDLG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_WINNERDLG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // Neutral (Default) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral (Sys. Default) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEUSD)
+LANGUAGE LANG_NEUTRAL, SUBLANG_SYS_DEFAULT
+#pragma code_page(1251)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SHOWWINNERSDLG DIALOGEX 0, 0, 493, 304
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Grid",IDC_WINNERS,"WTLGridCtrl",WS_BORDER | WS_TABSTOP,7,7,479,266
+    DEFPUSHBUTTON   "OK",IDOK,436,283,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_SHOWWINNERSDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 486
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 297
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_SHOWWINNERSDLG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENUEX
+BEGIN
+    POPUP "File",                           65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        POPUP "&New",                           65535,MFT_STRING,MFS_ENABLED
+        BEGIN
+            MENUITEM "Blank",                       ID_NEW_BLANK,MFT_STRING,MFS_ENABLED
+            MENUITEM "Easy",                        ID_NEW_EASY,MFT_STRING,MFS_ENABLED
+            MENUITEM "Normal",                      ID_NEW_NORMAL,MFT_STRING,MFS_ENABLED
+            MENUITEM "Hard",                        ID_NEW_HARD,MFT_STRING,MFS_ENABLED
+            MENUITEM "Insane",                      ID_NEW_INSANE,MFT_STRING,MFS_ENABLED
+        END
+        MENUITEM "&Load...\tF3",                ID_FILE_OPEN,MFT_STRING,MFS_ENABLED
+        MENUITEM "&Save\tF2",                   ID_FILE_SAVE,MFT_STRING,MFS_ENABLED
+        MENUITEM "Save &as...",                 ID_FILE_SAVE_AS,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT,MFT_STRING,MFS_ENABLED
+    END
+    POPUP "Game",                           65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "&Undo\tCtrl-Z",               ID_EDIT_UNDO,MFT_STRING,MFS_ENABLED
+        MENUITEM "&Redo\tCtrl-Y",               ID_EDIT_REDO,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "A&uto-Check",                 ID_GAME_AUTOCHECK,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "&Make a snapshot...\tF4",     ID_GAME_MAKEASNAPSHOT,MFT_STRING,MFS_ENABLED
+        MENUITEM "&Load snapshot",              ID_GAME_LOADSNAPSHOT,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "R&eset\tCtrl-R",              ID_GAME_RESET,MFT_STRING,MFS_ENABLED
+        MENUITEM "&Hint\tCtrl-H",               ID_GAME_HINT,MFT_STRING,MFS_ENABLED
+        MENUITEM "&Check\tCtrl-K",              ID_GAME_CHECK,MFT_STRING,MFS_ENABLED
+        MENUITEM "Try to &Solve",               ID_GAME_SOLVE,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        POPUP "Show Top Winners",               65535,MFT_STRING,MFS_ENABLED
+        BEGIN
+            MENUITEM "Easy Game",                   ID_SHOWTOPWINNERS_EASYGAME,MFT_STRING,MFS_ENABLED
+            MENUITEM "Normal Game",                 ID_SHOWTOPWINNERS_NORMALGAME,MFT_STRING,MFS_ENABLED
+            MENUITEM "Hard Game",                   ID_SHOWTOPWINNERS_HARDGAME,MFT_STRING,MFS_ENABLED
+            MENUITEM "Insane Game",                 ID_SHOWTOPWINNERS_INSANEGAME,MFT_STRING,MFS_ENABLED
+        END
+    END
+    POPUP "Help",                           65535,MFT_STRING | MFT_RIGHTJUSTIFY,MFS_ENABLED
+    BEGIN
+        MENUITEM "&About",                      ID_APP_ABOUT,MFT_STRING,MFS_ENABLED
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\sudoku.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    VK_F3,          ID_FILE_OPEN,           VIRTKEY, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    VK_F4,          ID_GAME_MAKEASNAPSHOT,  VIRTKEY, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_F2,          ID_FILE_SAVE,           VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,0,0,1
+ PRODUCTVERSION 2,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x9L
+#else
+ FILEFLAGS 0x8L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "Evgeniy Podkopaev"
+            VALUE "FileDescription", "Sudoku 2010"
+            VALUE "FileVersion", "2.0 Beta 1"
+            VALUE "InternalName", "Sudoku 2010"
+            VALUE "LegalCopyright", "Copyright 2009-2018"
+            VALUE "LegalTrademarks", "Under GPL License"
+            VALUE "OriginalFilename", "sudoku.exe"
+            VALUE "PrivateBuild", "2.0 Beta 1"
+            VALUE "ProductName", "Sudoku 2010"
+            VALUE "ProductVersion", "2.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "sudoku"
+    IDR_CURSOR              "@@@@@"
+    IDR_COUNT               "@@@"
+    IDS_CURSORFORMAT        "\t(%d, %d)"
+    IDS_COUNTFORMAT         "\t%d (%d)"
+    IDS_EASYGAME_D          "Easy game %d"
+    IDS_NORMALGAME_D        "Normal game %d"
+    IDS_HARDGAME_D          "Hard game %d"
+    IDS_INSANEGAME_D        "Insane game %d"
+    IDS_READY               "Ready (Press 'M' to change Mode or use Ctrl-Number)"
+    IDS_VERSION             "%s version %s (build %s)"
+    IDS_FILESAVEERROR       "File Save Error"
+    IDS_FILEOPENERROR       "File Open Error"
+    IDS_MAX_SNAPSHOT_AMOUNT "Maximum amount of snapshots is achived"
+    IDS_MAX_SNAPSHOT_AMOUNT_TITLE "Invalid operation"
+    IDR_TIME                "000D 00:00:00"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE
+BEGIN
+    ATL_IDS_SCSIZE          "Change the window size"
+    ATL_IDS_SCMOVE          "Change the window position"
+    ATL_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    ATL_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    ATL_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    ATL_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    ATL_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE
+BEGIN
+    ATL_IDS_SCRESTORE       "Restore the window to normal size"
+    ATL_IDS_SCTASKLIST      "Activate Task List"
+    ATL_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE
+BEGIN
+    ATL_IDS_MRU_FILE        "Open this document"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_EASYGAME            "Easy game"
+    IDS_NORMALGAME          "Normal game"
+    IDS_HARDGAME            "Hard game"
+    IDS_INSANEGAME          "Insane game"
+    IDS_WINNER_HEADER       "You're a winner! You won in '%s' in %s"
+END
+
+#endif    // Neutral (Sys. Default) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""atlres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
